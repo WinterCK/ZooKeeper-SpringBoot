@@ -10,7 +10,7 @@ public class TestMain {
                 public void run() {
                     try {
                     	ZooKeeperExclusiveLock exclusiveLock = new ZooKeeperExclusiveLock();
-                    	exclusiveLock.connectZooKeeper("39.97.171.17:2181", "chenjk");
+                    	exclusiveLock.connectZooKeeper("ip:2181", "chenjk");
                     	exclusiveLock.lock();
                     	System.out.println(Thread.currentThread().getName()+"在做事, 做完就释放锁");
                     	Thread.sleep(1000);
